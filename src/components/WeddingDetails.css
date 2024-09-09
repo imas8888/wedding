@@ -1,0 +1,68 @@
+/* Style for the Wedding Details section */
+.details {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 20px;
+    background-color: #f5f5dc;
+    color: #c0001b;
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Style for the left section (Wedding Details) */
+.details-left {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-left: 300px;
+    margin-right: 50px;
+}
+.details-right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+/* Adjustments for spacing and alignment */
+.details-left {
+    border-right: 1px solid #ccc; /* Optional: a thin divider line */
+}
+
+.details-left h2,
+.details-right h2 {
+    margin-top: 0;
+    font-size: 60px;
+}
+
+.details-left h3 {
+    margin-top: 0;
+    font-size: 22px;
+    text-align: left;
+}
+.details-right h3 {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.details-left p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.details-right p {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .details-left {
+        border-right: none; /* Remove the border on smaller screens */
+    }
+}

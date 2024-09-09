@@ -1,0 +1,29 @@
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.time-box {
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.time {
+    display: block;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Fraunces', serif; /* Apply Fraunces font here */
+}
+
+.label {
+    display: block;
+    font-size: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family: 'Arial', sans-serif;
+}

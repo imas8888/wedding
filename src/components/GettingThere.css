@@ -1,0 +1,63 @@
+.getting-there {
+    padding: 50px 20px;
+    background-color: #c0001b;
+    text-align: center;
+    color: #f5f5dc;
+}
+
+.getting-there h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.getting-there p {
+    margin-bottom: 30px;
+}
+
+.map-container {
+    max-width: 100%;
+    height: 450px;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.map-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.map-button img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.apple-maps {
+    background-color: #007AFF;
+}
+
+.google-maps {
+    background-color: #34A853;
+}
+
+.waze {
+    background-color: #00AEEF;
+}
+
+.map-button:hover {
+    opacity: 0.8;
+}
