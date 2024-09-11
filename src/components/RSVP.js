@@ -38,7 +38,7 @@ const RSVP = () => {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwSjzBT2KoyFt-5st8ABh249PIj_I-oBlpm1d5k0-NNlnSvBTEnoKdBzeH-vSUJyDFVtQ/exec'; // Replace with your Apps Script URL
 
         try {
-            const response = await fetch(scriptURL, {
+            await fetch(scriptURL, {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
