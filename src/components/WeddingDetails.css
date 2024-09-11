@@ -14,22 +14,20 @@
     flex: 1;
     padding: 20px;
     box-sizing: border-box; /* Ensures padding doesn't affect width */
-    margin-left: 300px;
-    margin-right: 50px;
+    margin-left: 0; /* Reset margin for mobile */
+    margin-right: 10px; /* Reduce margin for mobile */
+    border-right: 1px solid #ccc; /* Optional: a thin divider line */
 }
+
 .details-right {
     flex: 1;
     padding: 20px;
     box-sizing: border-box; /* Ensures padding doesn't affect width */
-    margin-left: 50px;
-    margin-right: 300px;
+    margin-left: 10px; /* Reduce margin for mobile */
+    margin-right: 0; /* Reset margin for mobile */
 }
 
 /* Adjustments for spacing and alignment */
-.details-left {
-    border-right: 1px solid #ccc; /* Optional: a thin divider line */
-}
-
 .details-left h2,
 .details-right h2 {
     margin-top: 0;
@@ -41,6 +39,7 @@
     font-size: 22px;
     text-align: left;
 }
+
 .details-right h3 {
     margin-top: 0;
     font-size: 30px;
@@ -51,6 +50,7 @@
     margin: 10px 0;
     font-size: 20px;
 }
+
 .details-right p {
     margin: 10px 0;
     font-size: 22px;
@@ -60,9 +60,44 @@
 @media (max-width: 768px) {
     .details {
         flex-direction: column;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
-    .details-left {
+    .details-left,
+    .details-right {
+        margin: 10px 0; /* Adjust margin for smaller screens */
         border-right: none; /* Remove the border on smaller screens */
+    }
+
+    .details-left h2,
+    .details-right h2 {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .details-left h3,
+    .details-right h3 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .details-left p,
+    .details-right p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .details-left h2,
+    .details-right h2 {
+        font-size: 30px; /* Further reduce font size for very small screens */
+    }
+
+    .details-left h3,
+    .details-right h3 {
+        font-size: 16px; /* Further adjust font size for very small screens */
+    }
+
+    .details-left p,
+    .details-right p {
+        font-size: 14px; /* Further adjust font size for very small screens */
     }
 }

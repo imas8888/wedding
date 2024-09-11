@@ -81,14 +81,38 @@
     font-size: 18px;
 }
 
-.pill-text {
-    flex: 1;
-    transform: scaleX(1.3);
+/* Responsive styles for mobile screens */
+@media only screen and (max-width: 768px) {
+    .logo h1 {
+        font-size: 48px; /* Reduce font size for smaller screens */
+        transform: scaleX(1);
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .pill {
+        padding: 8px 30px; /* Reduce padding for mobile */
+        font-size: 16px; /* Adjust font size for mobile */
+    }
 }
 
-.divider {
-    width: 1px;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.8;
+@media only screen and (max-width: 480px) {
+    .hero {
+        padding: 20px 10px; /* Further reduce padding on very small screens */
+    }
+
+    .logo h1 {
+        font-size: 36px; /* Further reduce font size on very small screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Further adjust font size for very small screens */
+    }
+
+    .pill {
+        padding: 6px 20px; /* Further reduce padding for very small screens */
+        font-size: 14px; /* Further adjust font size for very small screens */
+    }
 }
