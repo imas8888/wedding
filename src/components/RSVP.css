@@ -1,9 +1,9 @@
 .rsvp-section {
-    background-color: #c0001b;  /* Light grey background */
+    background-color: #be8d7a;  /* Light grey background */
     padding: 60px 20px;  /* Spacing around the section */
     text-align: center;  /* Centering content */
     color: #f5f5dc;  /* Darker text color for readability */
-    font-family: 'Fraunces', serif;  /* Elegant font for a classic feel */
+    font-family: 'Cinzel', serif;
 }
 
 .rsvp-section h2 {
@@ -34,7 +34,7 @@
     text-align: left;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #c0001b;
+    color: #be8d7a;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -61,7 +61,7 @@
 }
 
 .rsvp-form button {
-    background-color: #c0001b;  /* Brown button for a pop of color */
+    background-color: #be8d7a;  /* Brown button for a pop of color */
     color: #f5f5dc;
     font-size: 1.1rem;
     padding: 12px 20px;
@@ -96,7 +96,7 @@
 }
 
 .change-mind-button {
-    background-color: #c0001b;
+    background-color: #be8d7a;
     color: white;
     border: none;
     padding: 10px 20px;

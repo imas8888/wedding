@@ -5,6 +5,7 @@ import './RSVP.css';
 const RSVP = () => {
     const [formData, setFormData] = useState({
         name: '',
+        side: '',
         attending: '',
         guests: '',
         allergies: ''
@@ -35,7 +36,7 @@ const RSVP = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSjzBT2KoyFt-5st8ABh249PIj_I-oBlpm1d5k0-NNlnSvBTEnoKdBzeH-vSUJyDFVtQ/exec'; // Replace with your Apps Script URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8Pw-rJF4Af6n48WZGthy0fzSmp1qn-eu8tRToO_A6ejymYfMd0ckPg13D4bd0l5hn_w/exec'; // Replace with your Apps Script URL
 
         try {
             await fetch(scriptURL, {
@@ -62,6 +63,7 @@ const RSVP = () => {
         Cookies.remove('rsvpAttending');
         setFormData({
             name: '',
+            side: '',
             attending: '',
             guests: '',
             allergies: ''
@@ -88,6 +90,13 @@ const RSVP = () => {
                     <form className="rsvp-form" onSubmit={handleSubmit}>
                         <label>Name:</label>
                         <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+
+                        <label>Side:</label>
+                        <select name="side" value={formData.side} onChange={handleChange} required>
+                            <option value="">Select...</option>
+                            <option value="Yes">Bride</option>
+                            <option value="No">Groom</option>
+                        </select>
 
                         <label>Attending:</label>
                         <select name="attending" value={formData.attending} onChange={handleChange} required>

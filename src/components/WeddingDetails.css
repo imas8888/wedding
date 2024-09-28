@@ -4,7 +4,7 @@
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     padding: 20px;
     background-color: #f5f5dc;
-    color: #c0001b;
+    color: #be8d7a;
     text-align: left;
     font-weight: 500;
 }
@@ -17,6 +17,7 @@
     margin-left: 0; /* Reset margin for mobile */
     margin-right: 10px; /* Reduce margin for mobile */
     border-right: 1px solid #ccc; /* Optional: a thin divider line */
+    text-align: center;
 }
 
 .details-right {
@@ -37,7 +38,7 @@
 .details-left h3 {
     margin-top: 0;
     font-size: 22px;
-    text-align: left;
+    text-align: center;
 }
 
 .details-right h3 {
@@ -47,7 +48,7 @@
 }
 
 .details-left p {
-    margin: 10px 0;
+    margin: 50px 10px;
     font-size: 20px;
 }
 

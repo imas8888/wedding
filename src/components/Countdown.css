@@ -14,9 +14,9 @@
 
 .time {
     display: block;
-    font-size: 22px;
+    font-size: 50px;
     color: #ffffff;
-    font-family: 'Fraunces', serif; /* Apply Fraunces font here */
+    font-family: 'Cinzel', serif;
 }
 
 .label {
@@ -25,5 +25,5 @@
     color: #ffffff;
     text-transform: uppercase;
     margin-top: 5px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cinzel', serif;
 }

@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background-image: url('https://png.pngtree.com/background/20230126/original/pngtree-islamic-luxury-gold-mandala-in-wedding-invitation-card-style-ramadan-isra-picture-image_2025045.jpg'); /* Placeholder image */
+    background-image: url('../../public/hero_background.png'); /* Placeholder image */
     background-size: cover;
     background-position: center 0;
     position: relative;
@@ -13,6 +13,9 @@
     color: #f5f5dc;
     background-attachment: scroll;
     background-position: 50% 0;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .hero::before {
@@ -50,14 +53,13 @@
 }
 
 .logo h1 {
-    font-family: 'Great Vibes', cursive; /* Example font, you may need to import it in index.html or use Google Fonts */
+    font-family: 'Cinzel', serif;
     font-size: 76px;
     font-weight: bold;
     margin: 0;
-    font-family: 'Oranienbaum', serif; /* Apply Oranienbaum font here */
-    transform: scaleX(1.5);
     font-weight: 100;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
 }
 
 .hero-content p {
@@ -73,11 +75,11 @@
     border-radius: 50px;
     margin-top: 20px;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     gap: 20px; /* Space between the two texts */
-    font-family: 'Fraunces', serif;
+    font-family: 'Cinzel', serif;
     font-size: 18px;
 }
 
@@ -96,13 +98,13 @@
         padding: 8px 30px; /* Reduce padding for mobile */
         font-size: 16px; /* Adjust font size for mobile */
     }
+
+    .hero {
+        background-position: left top
+    }
 }
 
 @media only screen and (max-width: 480px) {
-    .hero {
-        padding: 20px 10px; /* Further reduce padding on very small screens */
-    }
-
     .logo h1 {
         font-size: 36px; /* Further reduce font size on very small screens */
     }
@@ -114,5 +116,10 @@
     .pill {
         padding: 6px 20px; /* Further reduce padding for very small screens */
         font-size: 14px; /* Further adjust font size for very small screens */
+    }
+
+    .hero {
+        padding: 20px 10px;
+        background-position: left top;
     }
 }
