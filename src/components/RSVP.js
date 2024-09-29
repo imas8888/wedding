@@ -19,7 +19,7 @@ const RSVP = () => {
             // Set the message based on the cookie value
             const attending = Cookies.get('rsvpAttending');
             if (attending === 'Yes') {
-                setMessage('You have successfully RSVPd. Thank you!');
+                setMessage('You have successfully RSVP\'d. Thank you!');
             } else if (attending === 'No') {
                 setMessage('Sorry to hear you won’t be attending. If you change your mind, you can RSVP again.');
             }
@@ -50,7 +50,7 @@ const RSVP = () => {
             Cookies.set('rsvpSubmitted', 'true', { expires: 365 }); // Set cookie to indicate submission
             Cookies.set('rsvpAttending', formData.attending, { expires: 365 }); // Save attending status
             setMessage(formData.attending === 'Yes'
-                ? 'You have successfully RSVPd. Thank you!'
+                ? 'You have successfully RSVP\'d. Thank you!'
                 : 'Sorry to hear you won’t be attending. If you change your mind, you can RSVP again.');
         } catch (error) {
             console.error('Error:', error);
@@ -94,8 +94,8 @@ const RSVP = () => {
                         <label>Side:</label>
                         <select name="side" value={formData.side} onChange={handleChange} required>
                             <option value="">Select...</option>
-                            <option value="Yes">Bride</option>
-                            <option value="No">Groom</option>
+                            <option value="Bride">Bride</option>
+                            <option value="Groom">Groom</option>
                         </select>
 
                         <label>Attending:</label>
