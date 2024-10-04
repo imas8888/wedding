@@ -111,7 +111,7 @@ const RSVP = () => {
                                 <label>Number of Guests:</label>
                                 <input type="number" name="guests" value={formData.guests} onChange={handleChange} required />
 
-                                <label>Any Allergies:</label>
+                                <label>Dietary Requirements:</label>
                                 <textarea name="allergies" value={formData.allergies} onChange={handleChange}></textarea>
                             </>
                         )}
