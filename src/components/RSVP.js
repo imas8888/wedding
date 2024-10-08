@@ -108,7 +108,7 @@ const RSVP = () => {
                         {/* Conditionally render "Guests" and "Allergies" if "Attending" is Yes */}
                         {formData.attending === 'Yes' && (
                             <>
-                                <label>Number of Guests:</label>
+                                <label>Number of Guests (Including You):</label>
                                 <input type="number" name="guests" value={formData.guests} onChange={handleChange} required />
 
                                 <label>Dietary Requirements:</label>
